@@ -14,7 +14,7 @@ class biasVariance:
         np.random.seed(self.seed)
         self.datasets = []
 
-        self.centers = np.linspace(0, 1, self.M)
+        self.centers = np.linspace(0, 0.75, self.M)
         self.x_test = np.linspace(0, 1, self.no_test_samples)
         self.h_test = np.sin(2 * np.pi * self.x_test)
         self.t_test = np.sin(2 * np.pi * self.x_test) + np.random.normal(0, 0.3, self.no_test_samples)
